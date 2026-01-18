@@ -1,18 +1,25 @@
-#include "raylib.h"
-
-#define WIDTH 1200
-#define HEIGHT 800
+#include "solver.h"
 
 int main() {
-    InitWindow(WIDTH, HEIGHT, "Sudoku Solver");
-    SetTargetFPS(60);
+    InitWindow(810, 810, "Sudoku Solver");
 
+    SetTargetFPS(60);
     while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(BLACK);
 
+        draw_title();
+        select_cell();
+        highlight_hovered_cell();
+        enter_digit();
+        draw_board();
+
+        if (IsKeyPressed(KEY_A)) sudoku_solve_animation_create();
+        if (IsKeyPressed(KEY_S)) sudoku_solve();
+        if (IsKeyPressed(KEY_C)) clear_board();
+        sudoku_solve_animation_play();
+
         EndDrawing();
     }
-
-    CloseWindow();
+    return 0;
 }
