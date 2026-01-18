@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# build / binary output
+build/
+.bin/
+
+# compiled objects
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# editor
+.vscode/
+main.code-workspace
+
+# debugging
+*.dSYM/
+*.pdb
+
+# scratch / experiments
+test/
