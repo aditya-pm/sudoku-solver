@@ -1,8 +1,15 @@
-# Sudoku Solver (C++)
+# Sudoku Solver
 
 A graphical Sudoku solver written in C++ that allows users to input a custom Sudoku puzzle and solve it using a backtracking algorithm. The application provides both an instant solve mode and an animated visualization mode that demonstrates the backtracking process step by step.
 
 This project focuses on algorithm visualization, recursion, and building an interactive GUI-based application in modern C++.
+
+
+## Demo
+<p align="center">
+  <img src="assets/demo.gif" alt="Demo" width="640">
+</p>
+
 
 
 ## Overview
